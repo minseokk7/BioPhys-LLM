@@ -32,13 +32,18 @@ metrics:
 # 🌌 BioPhys-LLM: Grand Unified Bio-Physical Optimization Framework for Large Language Models
 ## (대통합 바이오-물리학 LLM 최적화 프레임워크)
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/minseokk7/BioPhys-LLM)
+[![Hugging Face Hub](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BioPhys--LLM-yellow)](https://huggingface.co/minseokk7/BioPhys-LLM)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-red.svg)](LICENSE)
 [![Commercial: Prohibited](https://img.shields.io/badge/Commercial_Use-Requires_License-critical.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/Whitepaper-Available-green.svg)](RESEARCH_WHITEPAPER.md)
 [![Hardware](https://img.shields.io/badge/Hardware-16_Core_CPU_+_32GB_RAM-purple.svg)]()
 [![Throughput](https://img.shields.io/badge/Throughput-347.8_TPS-orange.svg)]()
 [![Context](https://img.shields.io/badge/Context-2M_Tokens-red.svg)]()
-[![Peer-Review](https://img.shields.io/badge/Peer--Verification-Invited-brightgreen.svg)]()
+
+> 🔗 **Official Links / 공식 저장소 링크:**
+> - 🐙 **GitHub Repository (Source Code & Framework)**: [https://github.com/minseokk7/BioPhys-LLM](https://github.com/minseokk7/BioPhys-LLM)
+> - 🤗 **Hugging Face Hub (Models, Weights & Docs)**: [https://huggingface.co/minseokk7/BioPhys-LLM](https://huggingface.co/minseokk7/BioPhys-LLM)
 
 > ⚠️ **[Strict Non-Commercial Research License Notice / 엄격한 비상업적 라이선스 고지]**  
 > All intellectual property, algorithms, and source codes are exclusively owned by the author (**@minseokk7**).  
@@ -98,7 +103,7 @@ metrics:
 >
 > ```bash
 > # 1. Clone the repository
-> git clone https://huggingface.co/minseokk7/BioPhys-LLM
+> git clone https://github.com/minseokk7/BioPhys-LLM.git
 > cd BioPhys-LLM
 > 
 > # 2. Run the complete one-click independent verification suite
@@ -106,8 +111,8 @@ metrics:
 > ```
 >
 > 💬 **Feedback & Issue Channels:**
+> - [GitHub Issues & Discussions](https://github.com/minseokk7/BioPhys-LLM/issues)
 > - [Hugging Face Community Discussions](https://huggingface.co/minseokk7/BioPhys-LLM/discussions)
-> - [GitHub Issues & Discussions](https://github.com/your-username/BioPhys-LLM/issues)
 
 ---
 
@@ -162,18 +167,6 @@ print(f"✅ Processed 2M Tokens! KV Cache Memory: 48.0 MB")
 
 # 🇰🇷 [한국어 상세 안내]
 
-## 💡 핵심 안내: 기존 일반 양자화와 바이오-물리학 변환의 근본적 차이
-
-> 🔬 **왜 BioPhys-LLM은 기존의 단순 양자화(INT4, AWQ, Q4_K_M 등)와 완전히 다른가?**
->
-> 1. **기존 일반 양자화 (손실형 반올림 절단)**:  
->    기존 방식은 가중치 숫자의 정밀도를 강제로 반올림하여 깎아내는 방식($3.14159 \rightarrow 3$)으로, 필연적으로 양자화 노이즈와 지능 손실(Perplexity 증가, 헛소리 환각)이 발생합니다.
-> 2. **BioPhys-LLM 원천 변환 (수학적/위상학적 무손실 변환)**:  
->    BioPhys-LLM은 숫자를 무식하게 버리는 것이 아닙니다. **만델브로트 프랙탈 IFS(반복 함수 시스템)**를 통해 가중치를 자기유사성 방정식으로 보존하고, **루프 양자중력 스핀 네트워크**로 200만 토큰을 128개 위상 매듭으로 압축하며, **크릭 워블 유전학**을 통해 핵심 척추(Backbone) 비트를 100% 보존합니다.  
->    *LM Studio, llama.cpp 등 범용 런타임에서의 호환성을 위해 표준 GQA/RoPE 텐서 프로토콜을 사용하는 GGUF 컨테이너로 패키징되었을 뿐, 그 내부 수학적 실체는 완전한 '자연과학적 무손실 위상 연속체'입니다.*
-
----
-
 ## 🎯 공식 적용 및 검증 모델
 
 | 공식 적용 및 검증 모델 | 원본 규모 / 구조 | BioPhys-LLM 최적화 후 로컬 상주 (내 PC) | 적용된 핵심 원천 엔진 |
@@ -211,7 +204,7 @@ print(f"✅ Processed 2M Tokens! KV Cache Memory: 48.0 MB")
 >
 > ```bash
 > # 1. 리포지토리 클론
-> git clone https://huggingface.co/minseokk7/BioPhys-LLM
+> git clone https://github.com/minseokk7/BioPhys-LLM.git
 > cd BioPhys-LLM
 > 
 > # 2. 원클릭 전수 재현 및 독립 검증 실행
@@ -219,8 +212,8 @@ print(f"✅ Processed 2M Tokens! KV Cache Memory: 48.0 MB")
 > ```
 >
 > 💬 **검증 결과 및 피드백 공유:**
+> - [GitHub Issues & PRs](https://github.com/minseokk7/BioPhys-LLM/issues)
 > - [Hugging Face 커뮤니티 토론방](https://huggingface.co/minseokk7/BioPhys-LLM/discussions)
-> - [GitHub Issues & PRs](https://github.com/your-username/BioPhys-LLM/issues)
 
 ---
 
