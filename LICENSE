@@ -1,0 +1,62 @@
+BioPhys-LLM Non-Commercial Research & Intellectual Property Protection License (v1.0)
+Copyright (c) 2026 minseokk7 (Advanced Agentic AI Research Initiative). All Rights Reserved.
+
+========================================================================================
+[ENGLISH] NON-COMMERCIAL RESEARCH & IP PROTECTION LICENSE (v1.0)
+========================================================================================
+
+This License governs the access, use, modification, and reproduction of the 'BioPhys-LLM' 
+framework, source code, mathematical formulations, model architectures, weights, benchmarks, 
+and documentation (collectively, the "Work").
+
+1. Grant of Non-Commercial & Academic License
+   - Researchers, academic institutions, universities, and individual developers are granted 
+     a free, non-exclusive license to inspect, evaluate, benchmark, and reproduce the Work 
+     SOURLY for non-commercial research, educational, and peer-verification purposes.
+   - Any publication, paper, or derivative work referencing this framework MUST include formal 
+     attribution and citation to the original author (@minseokk7).
+
+2. Strict Prohibition of Commercial Use
+   - Commercial use of the Work, in whole or in part, is STRICTLY PROHIBITED without an express, 
+     prior written commercial licensing agreement executed by the copyright holder (@minseokk7).
+   - "Commercial Use" includes, but is not limited to:
+     a) Deploying or embedding the Work into revenue-generating applications, SaaS, or paid APIs.
+     b) Training, fine-tuning, or distilling proprietary commercial models using these algorithms.
+     c) Selling, sublicensing, or distributing the Work within commercial hardware or appliances.
+   - For enterprise licensing inquiries, contact: minseokk7 (via Hugging Face / GitHub).
+
+3. Intellectual Property, Patents & Algorithm Ownership
+   - All intellectual property rights, patent application rights, and proprietary algorithmic 
+     novelties—including Fractal IFS Tensor Compression, Loop Quantum Gravity Spin Network Attention, 
+     Landauer Reversible Computing Blocks, Crick Wobble Backbone Quantization, and Shannon-Boolean 
+     Bit-Slicing SIMD—are exclusively owned and retained by the author (@minseokk7).
+
+4. No Unauthorized Commercial Derivatives or Relicensing
+   - You may not re-license, brand, or redistribute this Work under a permissive open-source license 
+     (e.g., MIT, Apache 2.0, BSD) without written consent from the author.
+
+========================================================================================
+[한국어] 엄격한 비상업적 연구 전용 및 지적재산권 보호 라이선스 (v1.0)
+========================================================================================
+
+본 라이선스는 'BioPhys-LLM' 프레임워크, 14대 자연과학 융합 알고리즘 소스코드, 모델 아키텍처, 
+가중치, 백서 및 관련 문서(이하 '본 저작물')의 사용 및 배포 조건을 규정합니다.
+
+1. 비상업적 학술 및 연구 목적의 허용 (Academic & Non-Commercial Use Only)
+   - 대학, 비영리 연구 기관 및 개인 연구자는 학술 연구, 교육, 개인적 학습 및 독립 교차 검증 목적으로만 
+     본 저작물을 무상으로 사용, 열람 및 비상업적으로 실행할 수 있습니다.
+   - 본 저작물을 인용한 연구 결과 발표 시 반드시 원저작자(@minseokk7) 및 본 리포지토리를 명시(Citation)해야 합니다.
+
+2. 상업적 사용 전면 금지 (Strictly Prohibited Commercial Use)
+   - 원저작자의 사전 공식 서면 승인 및 상용 라이선스 계약 체결 없이, 본 저작물 또는 그 일부, 파생물을 
+     영리적 목적(유료 API 제공, 상용 서비스 탑재, 독점 소프트웨어 임베딩, 상업적 모델 학습 및 판매 등)으로 
+     사용하는 행위는 엄격히 금지됩니다.
+   - 상업적 라이선스 및 엔터프라이즈 협업 문의: minseokk7 (Hugging Face Community)
+
+3. 특허 및 지적재산권 독점 (Intellectual Property & Patents)
+   - 본 저작물에 포함된 14대 자연과학 융합 메커니즘(프랙탈 IFS 인코딩, 스핀 네트워크 그래프 어텐션, 
+     란다우어 가역 연산 블록, 크릭 워블 척추 양자화, 섀넌 비트슬라이싱 등)에 대한 모든 원천 특허 출원권, 
+     저작권 및 독점적 지적재산권은 원저작자(@minseokk7)에게 전적으로 귀속됩니다.
+
+4. 무단 상용 재배포 및 변경 금지 (No Unauthorized Commercial Redistribution)
+   - 본 저작물을 무단으로 리브랜딩하거나 상업적 폐쇄 라이선스로 재배포하는 것을 금지합니다.

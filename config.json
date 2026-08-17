@@ -1,0 +1,29 @@
+{
+  "architectures": [
+    "BioPhysUnifiedModelForCausalLM"
+  ],
+  "model_type": "biophys-llm",
+  "name_or_path": "BioPhys-LLM-Unified",
+  "transformers_version": "4.49.0",
+  "vocab_size": 152064,
+  "hidden_size": 8192,
+  "intermediate_size": 24576,
+  "num_hidden_layers": 96,
+  "num_attention_heads": 64,
+  "num_key_value_heads": 8,
+  "head_dim": 128,
+  "max_position_embeddings": 2097152,
+  "sliding_window": 32768,
+  "biophys_features": {
+    "fractal_ifs_compression": true,
+    "spin_network_graph_attention": true,
+    "spin_nodes": 128,
+    "bose_einstein_kv_reduction": true,
+    "landauer_reversible_layers": true,
+    "epigenetic_1bit_swiglu": true,
+    "crick_wobble_4bit": true,
+    "predictive_speculative_decoding": true,
+    "shannon_bitslicing_simd": true
+  },
+  "torch_dtype": "float16"
+}
