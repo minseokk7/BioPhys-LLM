@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 2.5: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 2.6: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -26,10 +26,12 @@ from biophys_llm.pure_science.lagrange_orbital import LagrangeOrbitalCompressor
 
 from biophys_llm.speed_opt.speculative_burst import NeuronalBurstDrafter
 from biophys_llm.speed_opt.laminar_prefetch import LaminarPrefetchAccelerator
+from biophys_llm.speed_opt.saltatory_conduction import SaltatoryLayerConductor
+from biophys_llm.speed_opt.soliton_pulse_decoder import SolitonPulseDecoder
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "2.5.0"
+__version__ = "2.6.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -52,5 +54,7 @@ __all__ = [
     "LagrangeOrbitalCompressor",
     "NeuronalBurstDrafter",
     "LaminarPrefetchAccelerator",
+    "SaltatoryLayerConductor",
+    "SolitonPulseDecoder",
     "BioPhysGrandUnifiedBlock",
 ]
