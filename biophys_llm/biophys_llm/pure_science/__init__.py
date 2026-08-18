@@ -8,6 +8,9 @@ from biophys_llm.pure_science.onsager_reciprocal import OnsagerReciprocalAttenti
 from biophys_llm.pure_science.brillouin_bandgap import BrillouinBandgapFilter
 from biophys_llm.pure_science.verlinde_entropic import VerlindeEntropicForceOptimizer
 from biophys_llm.pure_science.anthropic_observer import AnthropicObserverPruner
+from biophys_llm.pure_science.symplectic_hamiltonian import SymplecticHamiltonianLayer
+from biophys_llm.pure_science.superfluid_conduit import LandauSuperfluidConduit
+from biophys_llm.pure_science.xylem_cohesion import XylemCohesionTensionPuller
 
 __all__ = [
     "DNATopoisomeraseCompressor",
@@ -16,4 +19,7 @@ __all__ = [
     "BrillouinBandgapFilter",
     "VerlindeEntropicForceOptimizer",
     "AnthropicObserverPruner",
+    "SymplecticHamiltonianLayer",
+    "LandauSuperfluidConduit",
+    "XylemCohesionTensionPuller",
 ]

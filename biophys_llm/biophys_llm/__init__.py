@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 2.8: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 2.9: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -27,6 +27,9 @@ from biophys_llm.pure_science.onsager_reciprocal import OnsagerReciprocalAttenti
 from biophys_llm.pure_science.brillouin_bandgap import BrillouinBandgapFilter
 from biophys_llm.pure_science.verlinde_entropic import VerlindeEntropicForceOptimizer
 from biophys_llm.pure_science.anthropic_observer import AnthropicObserverPruner
+from biophys_llm.pure_science.symplectic_hamiltonian import SymplecticHamiltonianLayer
+from biophys_llm.pure_science.superfluid_conduit import LandauSuperfluidConduit
+from biophys_llm.pure_science.xylem_cohesion import XylemCohesionTensionPuller
 
 from biophys_llm.speed_opt.speculative_burst import NeuronalBurstDrafter
 from biophys_llm.speed_opt.laminar_prefetch import LaminarPrefetchAccelerator
@@ -35,7 +38,7 @@ from biophys_llm.speed_opt.soliton_pulse_decoder import SolitonPulseDecoder
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "2.8.0"
+__version__ = "2.9.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -60,6 +63,9 @@ __all__ = [
     "BrillouinBandgapFilter",
     "VerlindeEntropicForceOptimizer",
     "AnthropicObserverPruner",
+    "SymplecticHamiltonianLayer",
+    "LandauSuperfluidConduit",
+    "XylemCohesionTensionPuller",
     "NeuronalBurstDrafter",
     "LaminarPrefetchAccelerator",
     "SaltatoryLayerConductor",
