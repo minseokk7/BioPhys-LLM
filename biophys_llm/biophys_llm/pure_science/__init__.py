@@ -15,6 +15,7 @@ from biophys_llm.pure_science.destructive_collision import DestructiveCollisionF
 from biophys_llm.pure_science.collisional_damping import CollisionalDampingStabilizer
 from biophys_llm.pure_science.volumetric_3d_tensor import Volumetric3DTensorRingLinear
 from biophys_llm.pure_science.spherical_harmonics_3d import SphericalHarmonics3DAttention
+from biophys_llm.pure_science.quantum_3d_tunneling import Quantum3DSuperpositionTunnelingLayer
 
 __all__ = [
     "DNATopoisomeraseCompressor",
@@ -30,4 +31,5 @@ __all__ = [
     "CollisionalDampingStabilizer",
     "Volumetric3DTensorRingLinear",
     "SphericalHarmonics3DAttention",
+    "Quantum3DSuperpositionTunnelingLayer",
 ]

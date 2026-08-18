@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 3.1: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 3.2: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -34,6 +34,7 @@ from biophys_llm.pure_science.destructive_collision import DestructiveCollisionF
 from biophys_llm.pure_science.collisional_damping import CollisionalDampingStabilizer
 from biophys_llm.pure_science.volumetric_3d_tensor import Volumetric3DTensorRingLinear
 from biophys_llm.pure_science.spherical_harmonics_3d import SphericalHarmonics3DAttention
+from biophys_llm.pure_science.quantum_3d_tunneling import Quantum3DSuperpositionTunnelingLayer
 
 from biophys_llm.speed_opt.speculative_burst import NeuronalBurstDrafter
 from biophys_llm.speed_opt.laminar_prefetch import LaminarPrefetchAccelerator
@@ -42,7 +43,7 @@ from biophys_llm.speed_opt.soliton_pulse_decoder import SolitonPulseDecoder
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "3.1.0"
+__version__ = "3.2.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -74,6 +75,7 @@ __all__ = [
     "CollisionalDampingStabilizer",
     "Volumetric3DTensorRingLinear",
     "SphericalHarmonics3DAttention",
+    "Quantum3DSuperpositionTunnelingLayer",
     "NeuronalBurstDrafter",
     "LaminarPrefetchAccelerator",
     "SaltatoryLayerConductor",
