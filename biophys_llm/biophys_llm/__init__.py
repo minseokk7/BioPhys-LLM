@@ -14,7 +14,12 @@ from biophys_llm.bio_opt.metabolic_early_exit import MetabolicEarlyExitControlle
 from biophys_llm.bio_opt.crick_wobble_quant import CrickWobbleQuantizer
 from biophys_llm.bio_opt.qwen38_bio_wrapper import Qwen38BioPhysAdapter
 
-__version__ = "2.0.0"
+from biophys_llm.frontier.mycelial_routing import MycelialAttentionRouter
+from biophys_llm.frontier.phononic_wave_linear import PhononicPhaseLinear
+from biophys_llm.frontier.dissipative_entropy import DissipativeEntropyRegularizer
+from biophys_llm.frontier.persistent_homology import PersistentHomologyPruner
+
+__version__ = "2.1.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -27,4 +32,8 @@ __all__ = [
     "MetabolicEarlyExitController",
     "CrickWobbleQuantizer",
     "Qwen38BioPhysAdapter",
+    "MycelialAttentionRouter",
+    "PhononicPhaseLinear",
+    "DissipativeEntropyRegularizer",
+    "PersistentHomologyPruner",
 ]
