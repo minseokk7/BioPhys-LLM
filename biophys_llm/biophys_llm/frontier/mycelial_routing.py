@@ -30,6 +30,14 @@ class MycelialAttentionRouter(nn.Module):
         initial_cond = torch.linspace(0.1, 1.0, num_heads)
         self.register_buffer("tube_conductivity", initial_cond)
 
+    def forward(
+        self,
+        q: torch.Tensor,
+        k: torch.Tensor,
+        v: torch.Tensor
+    ) -> Tuple[torch.Tensor, float]:
+        return self.route_attention(q, k, v)
+
     def route_attention(
         self,
         q: torch.Tensor,
