@@ -11,6 +11,8 @@ from biophys_llm.pure_science.anthropic_observer import AnthropicObserverPruner
 from biophys_llm.pure_science.symplectic_hamiltonian import SymplecticHamiltonianLayer
 from biophys_llm.pure_science.superfluid_conduit import LandauSuperfluidConduit
 from biophys_llm.pure_science.xylem_cohesion import XylemCohesionTensionPuller
+from biophys_llm.pure_science.destructive_collision import DestructiveCollisionFilter
+from biophys_llm.pure_science.collisional_damping import CollisionalDampingStabilizer
 
 __all__ = [
     "DNATopoisomeraseCompressor",
@@ -22,4 +24,6 @@ __all__ = [
     "SymplecticHamiltonianLayer",
     "LandauSuperfluidConduit",
     "XylemCohesionTensionPuller",
+    "DestructiveCollisionFilter",
+    "CollisionalDampingStabilizer",
 ]
