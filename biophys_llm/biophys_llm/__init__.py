@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 3.4: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 3.5: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -39,6 +39,9 @@ from biophys_llm.pure_science.counterdiabatic_acceleration import Counterdiabati
 from biophys_llm.pure_science.josephson_zero_bus import JosephsonZeroResistanceBus
 from biophys_llm.pure_science.internal_reflection_waveguide import TotalInternalReflectionWaveguide
 from biophys_llm.pure_science.supercritical_fusion import SupercriticalSinglePassEngine
+from biophys_llm.pure_science.calabi_yau_compact import CalabiYau6DCompactifier
+from biophys_llm.pure_science.superstring_vibration import SuperstringVibrationHarmonicDecoder
+from biophys_llm.pure_science.t_duality_d_brane import TDualityDBraneAttention
 
 from biophys_llm.speed_opt.speculative_burst import NeuronalBurstDrafter
 from biophys_llm.speed_opt.laminar_prefetch import LaminarPrefetchAccelerator
@@ -47,7 +50,7 @@ from biophys_llm.speed_opt.soliton_pulse_decoder import SolitonPulseDecoder
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "3.4.0"
+__version__ = "3.5.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -84,6 +87,9 @@ __all__ = [
     "JosephsonZeroResistanceBus",
     "TotalInternalReflectionWaveguide",
     "SupercriticalSinglePassEngine",
+    "CalabiYau6DCompactifier",
+    "SuperstringVibrationHarmonicDecoder",
+    "TDualityDBraneAttention",
     "NeuronalBurstDrafter",
     "LaminarPrefetchAccelerator",
     "SaltatoryLayerConductor",

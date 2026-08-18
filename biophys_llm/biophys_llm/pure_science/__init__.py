@@ -20,6 +20,9 @@ from biophys_llm.pure_science.counterdiabatic_acceleration import Counterdiabati
 from biophys_llm.pure_science.josephson_zero_bus import JosephsonZeroResistanceBus
 from biophys_llm.pure_science.internal_reflection_waveguide import TotalInternalReflectionWaveguide
 from biophys_llm.pure_science.supercritical_fusion import SupercriticalSinglePassEngine
+from biophys_llm.pure_science.calabi_yau_compact import CalabiYau6DCompactifier
+from biophys_llm.pure_science.superstring_vibration import SuperstringVibrationHarmonicDecoder
+from biophys_llm.pure_science.t_duality_d_brane import TDualityDBraneAttention
 
 __all__ = [
     "DNATopoisomeraseCompressor",
@@ -40,4 +43,7 @@ __all__ = [
     "JosephsonZeroResistanceBus",
     "TotalInternalReflectionWaveguide",
     "SupercriticalSinglePassEngine",
+    "CalabiYau6DCompactifier",
+    "SuperstringVibrationHarmonicDecoder",
+    "TDualityDBraneAttention",
 ]
