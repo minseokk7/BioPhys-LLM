@@ -38,28 +38,31 @@ class MycelialAttentionRouter(nn.Module):
     ) -> Tuple[torch.Tensor, float]:
         """
         Args:
-            q, k, v: [Batch, NumHeads, SeqLen, HeadDim]
+            q: [Batch, NumHeads, SeqLen_Q, HeadDim]
+            k, v: [Batch, NumHeads, SeqLen_KV, HeadDim]
         Returns:
-            out: 라우팅된 어텐션 출력
+            out: 라우팅된 어텐션 출력 [Batch, NumHeads, SeqLen_Q, HeadDim]
             active_head_ratio: 활성화된 핵심 균사체 경로 비율 (%)
         """
-        batch, heads, seq_len, dim = q.shape
+        batch, heads, seq_len_q, dim = q.shape
+        seq_len_kv = k.shape[2]
         
-        # 1. 각 헤드의 정보 플럭스(Flux) 측정
-        head_flux = (q * k).sum(dim=-1).abs().mean(dim=(0, 2)) # [NumHeads]
+        # 1. 어텐션 스코어 계산 (가변 길이 KV 지원)
+        scale = 1.0 / math.sqrt(dim)
+        scores = torch.matmul(q, k.transpose(-2, -1)) * scale # [Batch, Heads, SeqLen_Q, SeqLen_KV]
         
-        # 2. 점균류 전도도 갱신
+        # 2. 각 헤드의 정보 플럭스(Flux) 측정: 어텐션 스코어 에너지 평균
+        head_flux = scores.abs().mean(dim=(0, 2, 3)) # [NumHeads]
+        
+        # 3. 점균류 전도도 갱신
         with torch.no_grad():
             self.tube_conductivity.mul_(1.0 - self.decay_rate).add_(head_flux, alpha=self.decay_rate)
             norm_cond = (self.tube_conductivity - self.tube_conductivity.min()) / (self.tube_conductivity.max() - self.tube_conductivity.min() + 1e-8)
             active_mask = norm_cond >= self.threshold # 활성 튜브 판정
             active_ratio = (active_mask.float().mean().item()) * 100.0
 
-        # 3. 활성 튜브에 대해서만 선택적 어텐션 연산 수행
-        scale = 1.0 / math.sqrt(dim)
-        scores = torch.matmul(q, k.transpose(-2, -1)) * scale
+        # 4. 활성 튜브에 대해서만 선택적 가중치 적용
         attn = F.softmax(scores, dim=-1)
-        
         tube_weights = (norm_cond * active_mask.float()).view(1, heads, 1, 1)
         attn = attn * tube_weights
         

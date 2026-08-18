@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 2.0: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 2.2: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -19,7 +19,9 @@ from biophys_llm.frontier.phononic_wave_linear import PhononicPhaseLinear
 from biophys_llm.frontier.dissipative_entropy import DissipativeEntropyRegularizer
 from biophys_llm.frontier.persistent_homology import PersistentHomologyPruner
 
-__version__ = "2.1.0"
+from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
+
+__version__ = "2.2.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -36,4 +38,5 @@ __all__ = [
     "PhononicPhaseLinear",
     "DissipativeEntropyRegularizer",
     "PersistentHomologyPruner",
+    "BioPhysGrandUnifiedBlock",
 ]
