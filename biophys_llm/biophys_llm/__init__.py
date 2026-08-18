@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 3.5: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 3.6: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -42,6 +42,10 @@ from biophys_llm.pure_science.supercritical_fusion import SupercriticalSinglePas
 from biophys_llm.pure_science.calabi_yau_compact import CalabiYau6DCompactifier
 from biophys_llm.pure_science.superstring_vibration import SuperstringVibrationHarmonicDecoder
 from biophys_llm.pure_science.t_duality_d_brane import TDualityDBraneAttention
+from biophys_llm.pure_science.ergosphere_penrose import ErgosphereEnergyExtractor
+from biophys_llm.pure_science.eyring_transition_state import EyringTransitionStateRouter
+from biophys_llm.pure_science.atmospheric_jet_stream import AtmosphericJetStreamConveyor
+from biophys_llm.pure_science.cryptochrome_quantum_compass import CryptochromeQuantumCompass
 
 from biophys_llm.speed_opt.speculative_burst import NeuronalBurstDrafter
 from biophys_llm.speed_opt.laminar_prefetch import LaminarPrefetchAccelerator
@@ -50,7 +54,7 @@ from biophys_llm.speed_opt.soliton_pulse_decoder import SolitonPulseDecoder
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "3.5.0"
+__version__ = "3.6.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -90,6 +94,10 @@ __all__ = [
     "CalabiYau6DCompactifier",
     "SuperstringVibrationHarmonicDecoder",
     "TDualityDBraneAttention",
+    "ErgosphereEnergyExtractor",
+    "EyringTransitionStateRouter",
+    "AtmosphericJetStreamConveyor",
+    "CryptochromeQuantumCompass",
     "NeuronalBurstDrafter",
     "LaminarPrefetchAccelerator",
     "SaltatoryLayerConductor",

@@ -23,6 +23,10 @@ from biophys_llm.pure_science.supercritical_fusion import SupercriticalSinglePas
 from biophys_llm.pure_science.calabi_yau_compact import CalabiYau6DCompactifier
 from biophys_llm.pure_science.superstring_vibration import SuperstringVibrationHarmonicDecoder
 from biophys_llm.pure_science.t_duality_d_brane import TDualityDBraneAttention
+from biophys_llm.pure_science.ergosphere_penrose import ErgosphereEnergyExtractor
+from biophys_llm.pure_science.eyring_transition_state import EyringTransitionStateRouter
+from biophys_llm.pure_science.atmospheric_jet_stream import AtmosphericJetStreamConveyor
+from biophys_llm.pure_science.cryptochrome_quantum_compass import CryptochromeQuantumCompass
 
 __all__ = [
     "DNATopoisomeraseCompressor",
@@ -46,4 +50,8 @@ __all__ = [
     "CalabiYau6DCompactifier",
     "SuperstringVibrationHarmonicDecoder",
     "TDualityDBraneAttention",
+    "ErgosphereEnergyExtractor",
+    "EyringTransitionStateRouter",
+    "AtmosphericJetStreamConveyor",
+    "CryptochromeQuantumCompass",
 ]
