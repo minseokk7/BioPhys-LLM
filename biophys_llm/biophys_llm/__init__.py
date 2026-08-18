@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 2.2: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 2.4: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -18,10 +18,15 @@ from biophys_llm.frontier.mycelial_routing import MycelialAttentionRouter
 from biophys_llm.frontier.phononic_wave_linear import PhononicPhaseLinear
 from biophys_llm.frontier.dissipative_entropy import DissipativeEntropyRegularizer
 from biophys_llm.frontier.persistent_homology import PersistentHomologyPruner
+from biophys_llm.frontier.tensor_train_mps import TensorTrainMPSCompressor
+from biophys_llm.frontier.chebyshev_harmonic import ChebyshevHarmonicCompressor
+
+from biophys_llm.pure_science.dna_topoisomerase import DNATopoisomeraseCompressor
+from biophys_llm.pure_science.lagrange_orbital import LagrangeOrbitalCompressor
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "2.2.0"
+__version__ = "2.4.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -38,5 +43,9 @@ __all__ = [
     "PhononicPhaseLinear",
     "DissipativeEntropyRegularizer",
     "PersistentHomologyPruner",
+    "TensorTrainMPSCompressor",
+    "ChebyshevHarmonicCompressor",
+    "DNATopoisomeraseCompressor",
+    "LagrangeOrbitalCompressor",
     "BioPhysGrandUnifiedBlock",
 ]
