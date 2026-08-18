@@ -1,5 +1,5 @@
 """
-BioPhys-LLM 3.3: Grand Unified Bio-Physical Optimization Framework
+BioPhys-LLM 3.4: Grand Unified Bio-Physical Optimization Framework
 """
 
 from biophys_llm.core.reversible import LandauerReversibleFunction, BioPhysReversibleLayer
@@ -36,6 +36,9 @@ from biophys_llm.pure_science.volumetric_3d_tensor import Volumetric3DTensorRing
 from biophys_llm.pure_science.spherical_harmonics_3d import SphericalHarmonics3DAttention
 from biophys_llm.pure_science.quantum_3d_tunneling import Quantum3DSuperpositionTunnelingLayer
 from biophys_llm.pure_science.counterdiabatic_acceleration import CounterdiabaticQuantumAccelerator
+from biophys_llm.pure_science.josephson_zero_bus import JosephsonZeroResistanceBus
+from biophys_llm.pure_science.internal_reflection_waveguide import TotalInternalReflectionWaveguide
+from biophys_llm.pure_science.supercritical_fusion import SupercriticalSinglePassEngine
 
 from biophys_llm.speed_opt.speculative_burst import NeuronalBurstDrafter
 from biophys_llm.speed_opt.laminar_prefetch import LaminarPrefetchAccelerator
@@ -44,7 +47,7 @@ from biophys_llm.speed_opt.soliton_pulse_decoder import SolitonPulseDecoder
 
 from biophys_llm.models.unified_transformer import BioPhysGrandUnifiedBlock
 
-__version__ = "3.3.0"
+__version__ = "3.4.0"
 __all__ = [
     "LandauerReversibleFunction",
     "BioPhysReversibleLayer",
@@ -78,6 +81,9 @@ __all__ = [
     "SphericalHarmonics3DAttention",
     "Quantum3DSuperpositionTunnelingLayer",
     "CounterdiabaticQuantumAccelerator",
+    "JosephsonZeroResistanceBus",
+    "TotalInternalReflectionWaveguide",
+    "SupercriticalSinglePassEngine",
     "NeuronalBurstDrafter",
     "LaminarPrefetchAccelerator",
     "SaltatoryLayerConductor",

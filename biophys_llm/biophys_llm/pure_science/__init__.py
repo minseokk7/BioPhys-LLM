@@ -17,6 +17,9 @@ from biophys_llm.pure_science.volumetric_3d_tensor import Volumetric3DTensorRing
 from biophys_llm.pure_science.spherical_harmonics_3d import SphericalHarmonics3DAttention
 from biophys_llm.pure_science.quantum_3d_tunneling import Quantum3DSuperpositionTunnelingLayer
 from biophys_llm.pure_science.counterdiabatic_acceleration import CounterdiabaticQuantumAccelerator
+from biophys_llm.pure_science.josephson_zero_bus import JosephsonZeroResistanceBus
+from biophys_llm.pure_science.internal_reflection_waveguide import TotalInternalReflectionWaveguide
+from biophys_llm.pure_science.supercritical_fusion import SupercriticalSinglePassEngine
 
 __all__ = [
     "DNATopoisomeraseCompressor",
@@ -34,4 +37,7 @@ __all__ = [
     "SphericalHarmonics3DAttention",
     "Quantum3DSuperpositionTunnelingLayer",
     "CounterdiabaticQuantumAccelerator",
+    "JosephsonZeroResistanceBus",
+    "TotalInternalReflectionWaveguide",
+    "SupercriticalSinglePassEngine",
 ]
